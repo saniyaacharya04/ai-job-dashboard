@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: jobdb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+      - "8501:8501" # streamlit
+    volumes:
+      - ./src:/app/src
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://postgres:password@db:5432/jobdb
+volumes:
+  pgdata:

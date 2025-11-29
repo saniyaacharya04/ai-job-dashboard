@@ -1,0 +1,9 @@
+{
+    "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/miniconda/base/envs/jobdash/bin/python",
+    "python.condaPath": "/opt/homebrew/Caskroom/miniconda/base/bin/conda",
+    "python.analysis.extraPaths": [
+        "/opt/homebrew/Caskroom/miniconda/base/envs/jobdash/lib/python3.10/site-packages"
+    ],
+    "python.analysis.useImplicitNamespacePackages": false,
+    "python.linting.enabled": true
+}
