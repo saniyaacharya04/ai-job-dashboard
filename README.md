@@ -1,24 +1,35 @@
 
 ---
 <p align="center">
-
-  <!-- Language / Frameworks -->
+  <!-- Tech Stack Badges -->
   <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python">
-  <img src="https://img.shields.io/badge/FastAPI-API-green?logo=fastapi">
-  <img src="https://img.shields.io/badge/Streamlit-Dashboard-ff4b4b?logo=streamlit">
+  <img src="https://img.shields.io/badge/FastAPI-Framework-009688?logo=fastapi">
+  <img src="https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit">
   <img src="https://img.shields.io/badge/FAISS-Semantic_Search-orange">
-  <img src="https://img.shields.io/badge/Celery-Workers-4BC51D?logo=celery">
-  <img src="https://img.shields.io/badge/Postgres-DB-336791?logo=postgresql">
-  <img src="https://img.shields.io/badge/Redis-Queue-red?logo=redis">
+  <img src="https://img.shields.io/badge/Celery-Worker-4BC51D?logo=celery">
+  <img src="https://img.shields.io/badge/PostgreSQL-Database-336791?logo=postgresql">
+  <img src="https://img.shields.io/badge/Redis-Queue-CC0000?logo=redis">
   <img src="https://img.shields.io/badge/Docker-Production-2496ED?logo=docker">
 
-  <!-- License -->
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
-
-  <!-- GitHub Actions CI -->
+  <!-- CI/CD Badge -->
   <img src="https://github.com/saniyaacharya04/ai-job-dashboard/actions/workflows/ci.yml/badge.svg">
 
+  <!-- License -->
+  <img src="https://img.shields.io/badge/License-MIT-green.svg">
+
+  <!-- Code Style -->
+  <img src="https://img.shields.io/badge/code%20style-black-000000.svg">
 </p>
+
+<p align="center">
+  <!-- GitHub Stats -->
+  <img src="https://img.shields.io/github/stars/saniyaacharya04/ai-job-dashboard?style=social">
+  <img src="https://img.shields.io/github/forks/saniyaacharya04/ai-job-dashboard?style=social">
+  <img src="https://img.shields.io/github/issues/saniyaacharya04/ai-job-dashboard">
+  <img src="https://img.shields.io/github/last-commit/saniyaacharya04/ai-job-dashboard">
+  <img src="https://img.shields.io/github/repo-size/saniyaacharya04/ai-job-dashboard">
+</p>
+
 
 # AI Job Dashboard – Intelligent Job Search Platform
 
