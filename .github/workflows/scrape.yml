@@ -20,5 +20,6 @@ jobs:
       - name: Run ETL
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          REDIS_URL: ${{ secrets.REDIS_URL }}
         run: |
           python -c "from src.etl.pipeline import run_etl; run_etl(query='data scientist', location='India')"

@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environments
+.env
+*.env
+venv/
+env/
+.venv/
+
+# Project directories
+data/*
+!data/.gitkeep
+
+models/*
+!models/.gitkeep
+
+# Playwright
+playwright/.cache/
+playwright/.local-browsers/
+
+# Streamlit
+.streamlit/
+
+# Docker
+*.log
+docker/*.log
+
+# Build / cache
+*.cache/
+.cache/
+dist/
+build/
+
+# Editors
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tests cache
+pytest_cache/
+.coverage

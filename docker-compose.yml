@@ -1,26 +1,58 @@
-version: "3.8"
+version: "3.9"
+
 services:
-  db:
+
+  postgres:
     image: postgres:15
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: jobdb
+      POSTGRES_USER: jobdash
+      POSTGRES_PASSWORD: jobdash
+      POSTGRES_DB: jobdash
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
 
-  web:
-    build: .
+  redis:
+    image: redis:latest
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+  api:
+    build:
+      context: .
+      target: api
     depends_on:
-      - db
+      - postgres
+      - redis
+    environment:
+      DATABASE_URL: postgresql://jobdash:jobdash@postgres:5432/jobdash
+      REDIS_URL: redis://redis:6379/0
     ports:
       - "8000:8000"
-      - "8501:8501" # streamlit
-    volumes:
-      - ./src:/app/src
+
+  worker:
+    build:
+      context: .
+      target: worker
+    depends_on:
+      - redis
+      - postgres
     environment:
-      - DATABASE_URL=postgresql+psycopg2://postgres:password@db:5432/jobdb
+      DATABASE_URL: postgresql://jobdash:jobdash@postgres:5432/jobdash
+      REDIS_URL: redis://redis:6379/0
+
+  streamlit:
+    build:
+      context: .
+      target: streamlit
+    depends_on:
+      - api
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+
 volumes:
   pgdata:

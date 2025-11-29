@@ -1,0 +1,82 @@
+# -------------------------
+# PYTHON
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.egg-info/
+*.whl
+
+# -------------------------
+# ENVIRONMENTS
+# -------------------------
+.env
+*.env
+venv/
+env/
+.venv/
+
+# -------------------------
+# DATA & MODELS (keep empty dirs)
+# -------------------------
+data/*
+!data/.gitkeep
+
+models/*
+!models/.gitkeep
+
+# Temporary or generated assets
+*.db
+*.sqlite3
+*.jsonl
+
+# -------------------------
+# PLAYWRIGHT
+# -------------------------
+playwright/.cache/
+playwright/.local-browsers/
+
+# -------------------------
+# STREAMLIT
+# -------------------------
+.streamlit/
+
+# -------------------------
+# DOCKER
+# -------------------------
+*.log
+docker/*.log
+**/docker-temp/
+
+# -------------------------
+# BUILD / CACHE
+# -------------------------
+*.cache/
+.cache/
+dist/
+build/
+*.out
+
+# -------------------------
+# IDE / EDITORS
+# -------------------------
+.vscode/
+.idea/
+*.iml
+
+# -------------------------
+# OS FILES (macOS / Windows)
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# TEST / COVERAGE
+# -------------------------
+.coverage
+htmlcov/
+pytest_cache/
+__snapshots__/
