@@ -24,6 +24,7 @@ env/
 # -------------------------
 data/*
 !data/.gitkeep
+!data/sample_jobs.csv
 
 models/*
 !models/.gitkeep

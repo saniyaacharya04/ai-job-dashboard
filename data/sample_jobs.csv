@@ -1,0 +1,6 @@
+id,title,company,location,experience,salary_min,salary_max,skills,description
+1,Senior Machine Learning Engineer,NeuroScale AI,Remote,5+ years,140000,185000,"python, pytorch, transformers, faiss, docker","Design and deploy high-throughput semantic embedding and vector retrieval architectures."
+2,Full-Stack Software Engineer,CloudFlow Systems,San Francisco CA,3+ years,115000,150000,"javascript, react, python, fastapi, postgresql","Build full-stack customer analytics dashboards with React and FastAPI."
+3,Staff Data Scientist,InsightIQ,New York NY,6+ years,155000,195000,"python, sql, scikit-learn, pandas, tableau","Lead predictive analytics initiatives and customer churn modeling pipelines."
+4,DevOps / MLOps Infrastructure Engineer,ScaleOps Global,Remote,4+ years,130000,165000,"docker, kubernetes, aws, terraform, ci/cd","Build automated model training pipelines and manage Kubernetes microservice clusters."
+5,Backend Python Engineer,DataStream Inc,Austin TX,2+ years,95000,125000,"python, fastapi, sql, redis, docker","Develop low-latency REST APIs and message queue consumers for real-time telemetry."
